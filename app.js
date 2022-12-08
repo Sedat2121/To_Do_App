@@ -38,3 +38,11 @@ ul.addEventListener("click", e => {
 });
 
 // check and uncheck tasks
+
+ul.addEventListener("click", e => {
+    if(e.target.classList.contains("unchecked")){
+        e.target.className = "checked";
+    }else {
+        e.target.className = "unchecked";
+    }
+});
