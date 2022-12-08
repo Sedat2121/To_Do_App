@@ -11,10 +11,10 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("./bgimage2.jpg");
-    background:cover;
+    background-image: url("./images/bgimage2.jpg");
+    background: cover;
     background-size: 100vw ;
-    opacity:0.8;
+    opacity: 0.8;
 }
 main{
     display: flex;
@@ -22,7 +22,7 @@ main{
     align-items: center;
     width: 80vw;
     height: 80vh;  
-    margin:auto;
+    margin: auto;
 }
 #task{
     height: 3em;
@@ -34,7 +34,7 @@ h1{
     font-size: 4em;
     text-align: center;
 }
-/* todos*/
+/* todos */
 .todolist{
     width: 60vw;
     padding: 0px 10px;
@@ -42,8 +42,8 @@ h1{
     border: 5px solid #E3A897;
     color: rgb(39, 38, 38);
     background-color: #FFFFFF;
-    margin:auto;
-    margin-top:2em;
+    margin: auto;
+    margin-top: 2em;
     box-shadow: 5px 10px #b1a6ac98;
     border-radius: 10px;
 }
@@ -57,7 +57,6 @@ ul li{
     align-items: center;
     cursor: pointer;
     width: 50vw;
-   
     overflow-wrap: break-word;
     display: inline-block;
 }
@@ -65,25 +64,25 @@ ul li{
     display:flex;
     justify-content: center;
     margin: 5px 0px;
-    width:60vw ;
+    width: 60vw ;
     box-shadow: 5px 10px #b1a6ac98;
     border-radius: 5px;
     /* border: 1px solid rgb(253, 0, 0); */
     }
 li.checked::before {
     content: "\2714";
-    font-size:1.5em;
+    font-size: 1.5em;
     color:rgb(106, 192, 106);
     margin-right: 0.4em;
     
 }
 li.unchecked::before {
     content: "\2610";
-    font-size:1.5em;
+    font-size: 1.5em;
     margin-right: 0.4em;
     }
 .list-group {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     margin: 5px 0px;
     width: 100%;
@@ -91,10 +90,10 @@ li.unchecked::before {
 .list-group :hover{
     transform: scale(1.04);
 }
-.btn,.add-btn {
+.btn, .add-btn {
     background-color: #ACCACE; /* Blue background */
     border: none; /* Remove borders */
-    border-radius:5px;
+    border-radius: 5px;
     color: white; /* White text */
     padding: 0.3em 0.4em; /* Some padding */
     font-size: 1.2em; /* Set a font size */
@@ -111,24 +110,24 @@ input:focus {
     outline: none;
   }
 hr{
-      flex-direction: column;
+    flex-direction: column;
   }
 #footer{
     display: flex;
     flex-direction: row;
 }
-p{
+p {
     font-size: 1.4em;
     display: block;
     display: inline-block; 
-    margin-top:1em;
+    margin-top: 1em;
 }
-h2{
+h2 {
     text-align: center;
-    margin:1em 0em;
+    margin: 1em 0em;
 }
 .todolist-list-container{
-    margin-bottom:1em;
+    margin-bottom: 1em;
 }
 
 
