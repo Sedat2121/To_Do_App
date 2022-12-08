@@ -21,5 +21,20 @@ const createTask = (taskText) => {
 
 button.addEventListener("click", e => {
     e.preventDefault();
-    ul.innerHTML = createTask(inputText.value);
+    if(inputText.value) {
+    ul.innerHTML += createTask(inputText.value);
+    form.reset(); 
+    }else {
+        alert("Please add a task");
+    }
 });
+
+// delete a task
+
+ul.addEventListener("click", e => {
+    if(e.target.classList.contains("btn")){
+        e.target.parentElement.remove();
+    }
+});
+
+// check and uncheck tasks
