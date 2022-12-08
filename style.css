@@ -39,12 +39,12 @@ h1{
     width: 60vw;
     padding: 0px 10px;
     text-align: left;
-    border: 5px solid #E3A897;
+    border: 5px solid #d65d3b;
     color: rgb(39, 38, 38);
     background-color: #FFFFFF;
     margin: auto;
     margin-top: 2em;
-    box-shadow: 5px 10px #b1a6ac98;
+    box-shadow: 5px 10px #88737e98;
     border-radius: 10px;
 }
 ul li{
@@ -65,7 +65,7 @@ ul li{
     justify-content: center;
     margin: 5px 0px;
     width: 60vw ;
-    box-shadow: 5px 10px #b1a6ac98;
+    box-shadow: 5px 10px #856e7b98;
     border-radius: 5px;
     /* border: 1px solid rgb(253, 0, 0); */
     }
@@ -91,7 +91,7 @@ li.unchecked::before {
     transform: scale(1.04);
 }
 .btn, .add-btn {
-    background-color: #ACCACE; /* Blue background */
+    background-color: #78abb2; /* Blue background */
     border: none; /* Remove borders */
     border-radius: 5px;
     color: white; /* White text */

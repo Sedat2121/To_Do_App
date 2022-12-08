@@ -5,6 +5,7 @@ const ul = document.querySelector(".todolist-list-container");
 
 // functions
 
+// creating new tasks
 const createTask = (taskText) => {
     return `<div class="list-group">
             <li class="unchecked">${taskText}</li>
@@ -12,6 +13,7 @@ const createTask = (taskText) => {
             </div>`
 }
 
+// creating a counter
 const  comletedTaskCount = () => {
     let checkedCount = ul.getElementsByClassName("checked").length;
     let taskCount = ul.getElementsByClassName("list-group").length;
@@ -24,7 +26,6 @@ const  comletedTaskCount = () => {
 // events 
 
 // add task event
-
 button.addEventListener("click", e => {
     e.preventDefault();
     if(inputText.value) {
@@ -37,7 +38,6 @@ button.addEventListener("click", e => {
 });
 
 // delete a task
-
 ul.addEventListener("click", e => {
     if(e.target.classList.contains("btn")){
         e.target.parentElement.remove();
@@ -46,7 +46,6 @@ ul.addEventListener("click", e => {
 });
 
 // check and uncheck tasks
-
 ul.addEventListener("click", e => {
     if(e.target.classList.contains("unchecked")){
         e.target.className = "checked";
@@ -55,4 +54,3 @@ ul.addEventListener("click", e => {
     }
     comletedTaskCount();
 });
-
