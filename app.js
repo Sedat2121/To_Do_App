@@ -12,10 +12,16 @@ const createTask = (taskText) => {
             </div>`
 }
 
+const  comletedTaskCount = () => {
+    let checkedCount = ul.getElementsByClassName("checked").length;
+    let taskCount = ul.getElementsByClassName("list-group").length;
+    const checkedTasks = document.getElementById("checkedTasks");
+    const allTasks = document.getElementById("allTasks");
+    checkedTasks.innerText = checkedCount;
+    allTasks.innerText = taskCount;
+}
 
 // events 
-
-
 
 // add task event
 
@@ -27,6 +33,7 @@ button.addEventListener("click", e => {
     }else {
         alert("Please add a task");
     }
+    comletedTaskCount();
 });
 
 // delete a task
@@ -35,6 +42,7 @@ ul.addEventListener("click", e => {
     if(e.target.classList.contains("btn")){
         e.target.parentElement.remove();
     }
+    comletedTaskCount();
 });
 
 // check and uncheck tasks
@@ -45,4 +53,6 @@ ul.addEventListener("click", e => {
     }else {
         e.target.className = "unchecked";
     }
+    comletedTaskCount();
 });
+
