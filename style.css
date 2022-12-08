@@ -1,11 +1,12 @@
 *{
-    margin:0;
+    margin: 0;
     padding:0;
     box-sizing: border-box;
     cursor: default;
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
+    margin-top: 10%;
     background-color:#EEE8EF;
     display: flex;
     flex-direction: column;
@@ -66,7 +67,8 @@ ul li{
     margin: 5px 0px;
     width: 60vw ;
     box-shadow: 5px 10px #856e7b98;
-    border-radius: 5px;
+    border: 5px solid #d65d3b;
+    border-radius: 10px;
     /* border: 1px solid rgb(253, 0, 0); */
     }
 li.checked::before {
@@ -112,10 +114,28 @@ input:focus {
 hr{
     flex-direction: column;
   }
+
+
+
+
 #footer{
     display: flex;
     flex-direction: row;
+    border: 5px solid #d65d3b;
+    border-radius: 10px;
+    padding: 0.3em 0.4em;
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    display: inline-block; 
+    font-size: 1.2em;
+    box-shadow: 5px 10px #88737e98;
 }
+
+
+
+
 p {
     font-size: 1.4em;
     display: block;
